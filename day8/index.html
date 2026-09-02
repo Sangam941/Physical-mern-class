@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css in html</title>
+
+    <style>
+        p{
+            color: red;
+            background-color: aqua;
+            /* typography */
+            /* font */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+            font-size: 30px;
+            font-weight: bolder;
+            font-style:oblique;
+            
+            /* text */
+            text-align: center;
+            text-decoration: underline;
+            text-transform:uppercase;
+            text-decoration-color: green;
+            text-decoration-style:wavy;
+            
+            /* height and width */
+            height: 300px;
+            width: 100px;
+
+            /* overflow */
+            overflow:hidden;
+            text-overflow:ellipsis;
+        }
+
+        .first{
+            color: red;
+        }
+        .third{
+            color: aqua;
+        }
+
+    </style>
+
+<!-- external css -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+
+    <!-- css -> cascading style sheet:
+        1. inline css
+        2. internal css
+        3. external css 
+    -->
+    
+
+    <!-- inline css -->
+    <!-- <h1 style="color: red; background-color: blue;">hello from h1</h1> -->
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut temporibus nulla dolor?</p>
+
+    <!-- <h3>i am h3</h3> -->
+
+    <div class="first">hello</div>
+    <div class="second">hello2</div>
+    <div class="third">hello3</div>
+</body>
+</html>
