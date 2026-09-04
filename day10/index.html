@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    /* last  classs we cover thses three: */
+        /* element/tag selector  div/span/p */
+        /* class selector  . */
+        /* id selector # */
+
+/* today we cover these: */
+        /* universal selector '*'  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* child selector > */
+
+        div >p{
+            /* color: red; */
+        }
+
+
+        /* descendent  selector ' ' */
+        div article p{
+            color: blue;
+        }
+
+        div a{
+            color: red;
+            font-weight: 600;
+            font-size: 32px;
+        }
+
+        /* pseudo selector  ':' */
+        /* hover */
+        div article a:hover{
+            color: green;
+        }
+
+        div article a:active{
+            color: black;
+        }
+        div article a:visited{
+            color: yellow;
+        }
+
+        button{
+            background-color: blue;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 10px;
+            border:none;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-left: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover{
+            scale: 1.5;
+        }
+
+        button:active{
+            scale: 1;
+        }
+
+
+        /* multiple selections ',' */
+        p, h4, section{
+            color: red;
+            background: yellow;
+            font-size: 30px;
+            font-weight: 600;
+        }
+        
+
+    </style>
+</head>
+<body>
+<!--     
+    <div class="grandfather">
+        <p>i am a paragraph inside parent</p>
+        <p>hello</p>
+        <article class="father">
+            <p class="child">i am p inside article</p>
+            <a href="www.youtube.com">youtube</a>
+        </article>
+<a href="https://www.youtube.com" target="_blank">Google</a> 
+
+        <button>Click me</button>
+    </div> 
+-->
+
+
+    <div class="section2">
+        <p class="same">hello this is me</p>
+        <h4 class="same">i am the h4</h4>
+        <section class="same">i am a div inside the section</section>
+    </div>
+
+
+</body>
+</html>
