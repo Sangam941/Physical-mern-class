@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position in html</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            height: 300vh;
+            width: 100vw;
+            background-color: bisque;
+            padding: 20px;
+            position:relative;
+        }
+
+        .box{
+            height:100px;
+            width: 80%;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+
+        .box2{
+            background-color: aqua;
+            position: relative;
+            top:20px;
+            left: 30px;
+        }
+
+        .box3{
+            background-color: green;
+            position:absolute;
+            top: 500px;
+            right: 200px;
+        } 
+        .box1{
+            height: 100px;
+            width: 100px;
+            position: fixed;
+            border-radius: 50%;
+            top: 200px;
+            left: 200px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- postion:
+    1. Relative 
+    2. Absolute
+    3. fixed
+    4. sticky 
+    -->
+
+    <div class="container">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+
+</body>
+</html>
