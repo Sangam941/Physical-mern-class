@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 10px;
+            width: 300px;
+            border-radius: 20px;
+            background-color: rgb(154, 218, 218);
+            position:relative;
+        }
+
+        img{
+            border-radius: 20px;
+        }
+
+        .btn{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button{
+            background-color: rgb(103, 103, 223);
+            padding: 10px 20px;
+            border-radius: 20px;
+            border: none;
+            color: white;
+            font-weight: bold;
+        }
+        .btn span{
+            color: rgb(3, 83, 3);
+            font-weight: bold;
+        }
+
+        .fixed{
+            height: 30px;
+            width: 30px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            right: 20px;
+            bottom: 130px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.bing.com/th/id/OIP.yz-yIn1BbmmcMEC_zMzJDwHaEo?w=193&h=135&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=ImgAns&rm=2" alt="this is the nature image"
+        height="200">
+        <div class="content">
+            <h1>Nature Image</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos fuga corporis ad quis sint quasi sunt vero et dolor eaque!</p>
+        </div>
+
+        <div class="btn">
+            <div>Price: <span>Rs. 199</span></div>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="fixed"></div>
+    </div>
+</body>
+</html>
