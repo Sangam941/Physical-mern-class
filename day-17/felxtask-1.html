@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card using flexbox</title>
+
+    <style>
+        .container{
+            border: 2px solid red;
+            width: 400px;
+            border-radius: 20px;
+            background-color: rgb(228, 226, 226);
+            padding: 20px;
+            font-family: sans-serif;
+        }
+
+        h1{
+            font-weight:bolder;
+            font-size: 28px;
+        }
+
+        .subtotal, .delivery, .total{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        h3{
+            font-size: 16px;
+            color: rgb(83, 81, 81);
+            font-weight: 300;
+        }
+
+        p{
+            color: black;
+            font-weight: 600;
+        }
+        h2{
+            font-size: 20px;
+        }
+        .total-para{
+            font-size: 20px;
+            color: rgb(243, 133, 8);
+        }
+
+        button{
+            padding: 15px 20px;
+            border-radius: 30px;
+            background-color: rgb(243, 133, 8);
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            border: none;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Summary</h1>
+
+        <div class="subtotal">
+            <h3>SubTotal</h3>
+            <p>Rs.2400</p>
+        </div>
+
+        <div class="delivery">
+            <h3>Delivery Fee</h3>
+            <p>Rs.100</p>
+        </div>
+
+
+        <div class="total">
+            <h2>Total</h2>
+            <p class="total-para">Rs.2500</p>
+        </div>
+
+        <button>Proceed to Checkout</button>
+    </div>
+</body>
+</html>
