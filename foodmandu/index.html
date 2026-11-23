@@ -37,6 +37,42 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            gap: 20px;
+        }
+
+        form{
+            display: flex;
+        }
+
+        form .input{
+            width: 500px;
+            height: 40px;
+            padding: 0px 10px;
+        }
+
+        form .button{
+            background-color: yellow;
+            padding: 15px 40px;
+            border: none;
+        }
+
+        /* menu */
+
+        .menu{
+            padding: 70px;
+        }
+
+        .menu .topic{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .menu-cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            row-gap: 20px;
         }
     </style>
 </head>
@@ -55,13 +91,86 @@
             <h1>Order food from the widest range of restaurants.</h1>
 
             <form>
-                <input type="text" name="" id="">
-                <input type="button" value="Find Restaurants">
+                <input class="input" type="text" name="" id="" placeholder="Restaurants or Cuisine (leave it blank to browse all)">
+                <input class="button" type="button" value="Find Restaurants">
             </form>
         </section>
 
         <section class="menu">
-            
+            <div class="topic">
+                <h4>Featured Restaurants</h4>
+                <p>View all</p>
+            </div>
+
+            <div class="menu-cards">
+                <div class="card">
+                    <div class="image">
+                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
+                    </div>
+
+                    <p>4 Corners - Detroit Style Pizza</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
+                    </div>
+
+                    <p>4 Corners - Detroit Style Pizza</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
+                    </div>
+
+                    <p>4 Corners - Detroit Style Pizza</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
+                    </div>
+
+                    <p>4 Corners - Detroit Style Pizza</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
+                    </div>
+
+                    <p>4 Corners - Detroit Style Pizza</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
+                    </div>
+
+                    <p>4 Corners - Detroit Style Pizza</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
+                    </div>
+
+                    <p>4 Corners - Detroit Style Pizza</p>
+                </div>
+
+                <div class="card">
+                    <div class="image">
+                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
+                    </div>
+
+                    <p>4 Corners - Detroit Style Pizza</p>
+                </div>
+
+                
+            </div>
+
+
         </section>
     </main>
 </body>
