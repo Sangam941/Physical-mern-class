@@ -1,191 +1,278 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>foodmandu website</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        header{
-            padding: 10px 70px;
-        }
-        nav{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        padding: 10px 70px;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
 
-        nav button{
-            background-color: rgb(57, 56, 56);
-            color: yellow;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 10px;
-        }
+      nav button {
+        background-color: rgb(57, 56, 56);
+        color: yellow;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+      }
 
-        /* hero section */
-        .hero{
-            background-image: url('/foodmandu/images/hero-bg.webp');
-            height: 90vh;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            gap: 20px;
-        }
+      /* hero section */
+      .hero {
+        background-image: url("/foodmandu/images/hero-bg.webp");
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+      }
 
+      form {
+        display: flex;
+      }
+
+      form .input {
+        width: 500px;
+        height: 40px;
+        padding: 0px 10px;
+      }
+
+      form .button {
+        background-color: yellow;
+        padding: 15px 40px;
+        border: none;
+      }
+
+      @media (max-width:500px) {
         form{
-            display: flex;
+          display: flex;
+          flex-direction: column;
         }
+        
+      }
 
-        form .input{
-            width: 500px;
-            height: 40px;
-            padding: 0px 10px;
-        }
+      /* menu */
+      .menu {
+        padding: 70px;
+      }
 
-        form .button{
-            background-color: yellow;
-            padding: 15px 40px;
-            border: none;
-        }
+      .group {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-        /* menu */
-        .menu{
-            padding: 70px;
-        }
+      .menu-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        row-gap: 20px;
+      }
 
-        .group{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
+      @media (max-width:500px) {
         .menu-items{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-            row-gap: 20px;
+          display: grid;
+          grid-template-columns: 1fr;
         }
+        
+      }
 
-        /* banner-2 */
+      /* banner-2 */
 
-        .banner-2{
-            background-image: url('/foodmandu/images/banner-2.png');
-            background-repeat: no-repeat;
-            width: 100%;
-            background-size: cover;
-            background-position: center center;
-            height: 320px;
-            margin: 30px 0px;
-        }
+      .banner-2 {
+        background-image: url("/foodmandu/images/banner-2.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+        height: 320px;
+        margin: 30px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        width: 70%;
+        text-align: center;
+        gap: 15px;
+        font-size: 1.2rem;
+      }
+
+      .footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <img src="/foodmandu/images/logo-n.png" alt="this is logo" height="35">
-            <button>Login</button>
-        </nav>
+      <nav>
+        <img
+          src="/foodmandu/images/logo-n.png"
+          alt="this is logo"
+          height="35"
+        />
+        <button>Login</button>
+      </nav>
     </header>
 
     <!-- main section -->
 
     <main>
-        <section class="hero">
-            <h1>Order food from the widest range of restaurants.</h1>
+      <section class="hero">
+        <h1>Order food from the widest range of restaurants.</h1>
 
-            <form>
-                <input class="input" type="text" name="" id="" placeholder="Restaurants or Cuisine (leave it blank to browse all)">
-                <input class="button" type="button" value="Find Restaurants">
-            </form>
-        </section>
+        <form>
+          <input
+            class="input"
+            type="text"
+            name=""
+            id=""
+            placeholder="Restaurants or Cuisine (leave it blank to browse all)"
+          />
+          <input class="button" type="button" value="Find Restaurants" />
+        </form>
+      </section>
 
-        <section class="menu">
-            <div class="group">
-                <h3>Featured Restaurants</h3>
-                <p>View all</p>
+      <section class="menu">
+        <div class="group">
+          <h3>Featured Restaurants</h3>
+          <p>View all</p>
+        </div>
+
+        <div class="menu-items">
+          <div class="card">
+            <div class="image">
+              <img src="/foodmandu/images/pizza.png" alt="" height="150" />
             </div>
 
-            <div class="menu-items">
-                <div class="card">
-                    <div class="image">
-                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
-                    </div>
+            <p>4 Corners - Detroit Style Pizza</p>
+          </div>
 
-                    <p>4 Corners - Detroit Style Pizza</p>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
-                    </div>
-
-                    <p>4 Corners - Detroit Style Pizza</p>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
-                    </div>
-
-                    <p>4 Corners - Detroit Style Pizza</p>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
-                    </div>
-
-                    <p>4 Corners - Detroit Style Pizza</p>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
-                    </div>
-
-                    <p>4 Corners - Detroit Style Pizza</p>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
-                    </div>
-
-                    <p>4 Corners - Detroit Style Pizza</p>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
-                    </div>
-
-                    <p>4 Corners - Detroit Style Pizza</p>
-                </div>
-
-                <div class="card">
-                    <div class="image">
-                        <img src="/foodmandu/images/pizza.png" alt="" height="150">
-                    </div>
-
-                    <p>4 Corners - Detroit Style Pizza</p>
-                </div>
-
-
+          <div class="card">
+            <div class="image">
+              <img src="/foodmandu/images/pizza.png" alt="" height="150" />
             </div>
 
-        </section>
+            <p>4 Corners - Detroit Style Pizza</p>
+          </div>
 
-        <section class="banner-2">
+          <div class="card">
+            <div class="image">
+              <img src="/foodmandu/images/pizza.png" alt="" height="150" />
+            </div>
 
-        </section>
+            <p>4 Corners - Detroit Style Pizza</p>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/foodmandu/images/pizza.png" alt="" height="150" />
+            </div>
+
+            <p>4 Corners - Detroit Style Pizza</p>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/foodmandu/images/pizza.png" alt="" height="150" />
+            </div>
+
+            <p>4 Corners - Detroit Style Pizza</p>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/foodmandu/images/pizza.png" alt="" height="150" />
+            </div>
+
+            <p>4 Corners - Detroit Style Pizza</p>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/foodmandu/images/pizza.png" alt="" height="150" />
+            </div>
+
+            <p>4 Corners - Detroit Style Pizza</p>
+          </div>
+
+          <div class="card">
+            <div class="image">
+              <img src="/foodmandu/images/pizza.png" alt="" height="150" />
+            </div>
+
+            <p>4 Corners - Detroit Style Pizza</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="banner-2">
+        <div class="content">
+          <h2>About Us</h2>
+          <p>
+            Foodmandu is the fastest, easiest and most convenient way to enjoy
+            the best food of your favourite restaurants at home, at the office
+            or wherever you want to.
+          </p>
+
+          <p>
+            We know that your time is valuable and sometimes every minute in the
+            day counts. Thatâ€™s why we deliver! So you can spend more time
+            doing the things you love.
+          </p>
+
+          <button class="learn-more">LEARN MORE</button>
+        </div>
+      </section>
+
+      <section class="footer">
+        <div class="first">
+          <h3>We're Foodmandu</h3>
+          <p>About Us</p>
+          <p>Delivery Charges</p>
+          <p>Blog</p>
+        </div>
+
+        <div class="second">
+            <h3>We're Foodmandu</h3>
+          <p>About Us</p>
+          <p>Delivery Charges</p>
+          <p>Blog</p>
+        </div>
+
+        <div class="third">
+            <h3>We're Foodmandu</h3>
+          <p>About Us</p>
+          <p>Delivery Charges</p>
+          <p>Blog</p>
+        </div>
+
+        <div class="fourth">
+            <h3>We're Foodmandu</h3>
+          <p>About Us</p>
+          <p>Delivery Charges</p>
+          <p>Blog</p>
+        </div>
+      </section>
     </main>
-</body>
+  </body>
 </html>
